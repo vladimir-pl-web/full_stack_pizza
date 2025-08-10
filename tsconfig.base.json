@@ -11,11 +11,10 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "baseUrl": ".",
     "paths": {
       "@client/*": ["apps/client/*"],
-      "@server/*": ["apps/backend/src/*"],
+      "@server/*": ["apps/server/src/*"],
       "@packages/*": ["packages/*"]
     }
   }

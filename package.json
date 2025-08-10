@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "type":"module",
+  "type": "module",
   "workspaces": [
     "apps/client",
     "apps/server",
@@ -19,7 +19,7 @@
     ]
   },
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace apps/server\" \"npm run dev --workspace apps/client\"",
+    "dev": "concurrently \"npm run start --workspace apps/server\" \"npm run dev --workspace apps/client\"",
     "build": "concurrently \"npm run build --workspace apps/server\" \"npm run build --workspace apps/client\"",
     "start": "concurrently \"npm run start --workspace apps/server\" \"npm run start --workspace apps/client\"",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",

@@ -1,13 +1,34 @@
-/**/*/dist
-/*.js
-/**/*.d.ts
-/**/*.md
-/**/*.json
-/**/*.ico
-/**/*.css
-/**/*.scss
-/**/*.next
+# Build output folders
+**/dist
+**/.next
+build
+
+# Node modules
 node_modules/
+
+# TypeScript declaration files
+**/*.d.ts
+
+# Static assets
+**/*.ico
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+
+# Log and lock files
+*.log
+*.lock
+
+# Config files (optional to ignore or format)
 .gitignore
 .prettierignore
 .prettierrc
+
+# Optional: ignore markdown, JSON, CSS/SCSS if you prefer to not format them
+# Remove these lines if you want prettier to format these files
+# **/*.md
+# **/*.json
+# **/*.css
+# **/*.scss
