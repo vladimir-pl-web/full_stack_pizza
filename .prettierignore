@@ -1,0 +1,13 @@
+/**/*/dist
+/*.js
+/**/*.d.ts
+/**/*.md
+/**/*.json
+/**/*.ico
+/**/*.css
+/**/*.scss
+/**/*.next
+node_modules/
+.gitignore
+.prettierignore
+.prettierrc
