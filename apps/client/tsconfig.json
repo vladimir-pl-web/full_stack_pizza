@@ -5,7 +5,14 @@
     "incremental": true,
     "allowJs": true,
     "noEmit": true, // ✅ keep noEmit for client
-    "plugins": [{ "name": "next" }]
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "~/components/*": ["./components/*"], // ✅ This makes shadcn place files there
+      "~/lib/*": ["./lib/*"],
+      "~/hooks/*": ["./hooks/*"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

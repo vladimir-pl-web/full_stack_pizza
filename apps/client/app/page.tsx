@@ -1,11 +1,15 @@
+import { Button } from '~/components/ui/button'
+import { Switch } from '~/components/ui/switch'
+
 export default async function Home() {
   const data = await fetch('http://localhost:4200/api')
 
   const post = await data.json()
-  return <div>{JSON.stringify(post)}</div>
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-sans sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start"></main>
+    <div className="mt-2 flex flex-col items-center justify-center gap-2">
+      <Button variant="outline">Click me</Button>
+      <Switch>Theme</Switch>
+      {JSON.stringify(post)}
     </div>
   )
 }

@@ -46,6 +46,7 @@
     "typescript-eslint": "^8.20.0"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
     "dayjs": "^1.11.10",
     "lodash": "^4.17.21",
     "zod": "^4.0.17"
