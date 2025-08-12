@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "incremental": true,
+    "resolveJsonModule": true,
     "allowJs": true,
     "noEmit": true, // ✅ keep noEmit for client
     "plugins": [{ "name": "next" }],

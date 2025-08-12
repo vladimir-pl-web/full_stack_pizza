@@ -3,7 +3,6 @@
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import * as React from 'react'
 import { useEffect, useState } from 'react'
-
 function Themes({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) {
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>
 }

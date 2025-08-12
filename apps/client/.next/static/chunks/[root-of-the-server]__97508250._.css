@@ -803,6 +803,10 @@
     gap: calc(var(--spacing) * 4);
   }
 
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+
   .overflow-hidden {
     overflow: hidden;
   }
