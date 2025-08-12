@@ -3,6 +3,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 
+import { ThemeProvider } from '~/components/providers/themeProvider'
+import { ColorThemeSwitcher } from '~/components/ui/colorThemeSwitcher'
+
 const nunito = Nunito({
   variable: '--font-nunito',
   subsets: ['latin', 'cyrillic']
@@ -21,7 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.variable} } antialiased`}>
-        <main className="min-h-screen">{children}</main>
+        <ThemeProvider>
+          <main className="min-h-screen">
+            <ColorThemeSwitcher />
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   )
