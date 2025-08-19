@@ -5,9 +5,7 @@ import { Nunito } from 'next/font/google'
 
 import { I18nProvider } from '~/components/providers/i18nProvider'
 import { ThemeProvider } from '~/components/providers/themeProvider'
-import { ColorThemeSwitcher } from '~/components/ui/colorThemeSwitcher'
-import MyClient from '~/components/ui/e'
-import LanguageSwitcher from '~/components/ui/langSwitcher'
+import { Header } from '~/components/shared'
 import { Locale } from '~/lib/i18n/config'
 import { getServerTranslation } from '~/lib/i18n/server'
 
@@ -30,17 +28,14 @@ export default async function RootLayout(props: {
   const locale = resolvedParams.locale
 
   const t = await getServerTranslation(locale)
-
   return (
     <html lang={locale}>
       <body className={`${nunito.variable} } antialiased`}>
         <ThemeProvider>
           <I18nProvider locale={locale}>
             <main className="min-h-screen">
-              <ColorThemeSwitcher />
               <h1>{t('language')}</h1>
-              <MyClient />
-              <LanguageSwitcher locale={locale} />
+              <Header isAuthorised={false} locale={locale} translate={t} />
               {children}
             </main>
           </I18nProvider>

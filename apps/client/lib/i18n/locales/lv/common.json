@@ -1,4 +1,10 @@
 {
   "hello": "Sveiki",
-  "language": "Valoda"
+  "language": "Valoda",
+  "logo.greeting": "Vairāk garšīgi nevar būt",
+  "theme.dark": "Tumšais",
+  "theme.light": "Gaišais",
+  "theme.system": "Sistēma",
+  "enter": "Ienākt",
+  "profile": "Profils"
 }

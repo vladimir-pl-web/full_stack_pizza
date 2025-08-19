@@ -1,4 +1,10 @@
 {
   "hello": "Привет",
-  "language": "Язык"
+  "language": "Язык",
+  "logo.greeting": "Вкусней уже некуда",
+  "theme.dark": "Тёмная",
+  "theme.light": "Светлая",
+  "theme.system": "Системная",
+  "enter": "Войти",
+  "profile": "Профиль"
 }

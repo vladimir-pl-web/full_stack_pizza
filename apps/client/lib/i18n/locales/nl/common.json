@@ -1,4 +1,10 @@
 {
   "hello": "Hallo",
-  "language": "Taal"
+  "language": "Taal",
+  "logo.greeting": "Lekkerder kan het niet worden",
+  "theme.dark": "Donker",
+  "theme.light": "Licht",
+  "theme.system": "Systeem",
+  "enter": "Inloggen",
+  "profile": "Profiel"
 }

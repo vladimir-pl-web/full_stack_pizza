@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/vladi/Desktop/nest/pizza_fullstack/apps/client/app/%5Blocale%5D/test/page.tsx"],"sourcesContent":["import React from 'react'\r\n\r\ninterface IPage {\r\n  className?: string\r\n}\r\n\r\nconst Page: React.FC<IPage> = ({ className }) => {\r\n  return <div className={className}>Test</div>\r\n}\r\nexport default Page\r\n"],"names":[],"mappings":";;;;;AAMA,MAAM,OAAwB,CAAC,EAAE,SAAS,EAAE;IAC1C,qBAAO,8OAAC;QAAI,WAAW;kBAAW;;;;;;AACpC;uCACe","debugId":null}}]
+}

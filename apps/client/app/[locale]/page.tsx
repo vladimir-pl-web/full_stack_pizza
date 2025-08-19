@@ -2,6 +2,7 @@ import { Button } from '~/components/ui/button'
 import { Switch } from '~/components/ui/switch'
 import { Locale } from '~/lib/i18n/config'
 import { getServerTranslation } from '~/lib/i18n/server'
+
 export default async function Home(props: { params: Promise<{ locale: Locale }> }) {
   const { params } = props
   const resolvedParams = await params

@@ -1,4 +1,10 @@
 {
   "hello": "Hello",
-  "language": "Language"
+  "language": "Language",
+  "logo.greeting": "It can’t be any more delicious",
+  "theme.dark": "Dark",
+  "theme.light": "Light",
+  "theme.system": "System",
+  "enter": "Enter",
+  "profile": "Profile"
 }
