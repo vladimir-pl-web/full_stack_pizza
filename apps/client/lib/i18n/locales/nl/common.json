@@ -6,5 +6,24 @@
   "theme.light": "Licht",
   "theme.system": "Systeem",
   "enter": "Inloggen",
-  "profile": "Profiel"
+  "profile": "Profiel",
+
+  "title.all": "Alle Pizza's",
+  "cats.pizzas": "Pizza's",
+  "cats.combo": "Combi",
+  "cats.snacks": "Snacks",
+  "cats.cocktails": "Cocktails",
+  "cats.coffee": "Koffie",
+  "cats.drinks": "Dranken",
+  "cats.desserts": "Desserts",
+
+  "sort": "Sorteren",
+  "sort.popular": "Populair",
+  "sort.popular.first": "Eerst populair",
+  "sort.cheap": "Goedkoop",
+  "sort.cheap.first": "Eerst goedkoopste",
+  "sort.expensive": "Duur",
+  "sort.expensive.first": "Eerst duurste",
+  "sort.rating": "Beoordeling",
+  "sort.rating.first": "Best beoordeeld eerst"
 }

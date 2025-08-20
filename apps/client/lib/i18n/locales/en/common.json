@@ -2,9 +2,30 @@
   "hello": "Hello",
   "language": "Language",
   "logo.greeting": "It can’t be any more delicious",
+
   "theme.dark": "Dark",
   "theme.light": "Light",
   "theme.system": "System",
+
   "enter": "Enter",
-  "profile": "Profile"
+  "profile": "Profile",
+
+  "title.all": "All Pizzas",
+  "cats.pizzas": "Pizzas",
+  "cats.combo": "Combo",
+  "cats.snacks": "Snacks",
+  "cats.cocktails": "Cocktails",
+  "cats.coffee": "Coffee",
+  "cats.drinks": "Drinks",
+  "cats.desserts": "Desserts",
+
+  "sort": "Sort",
+  "sort.popular": "Popular",
+  "sort.popular.first": "Popular First",
+  "sort.cheap": "Cheap",
+  "sort.cheap.first": "Cheap First",
+  "sort.expensive": "Expensive",
+  "sort.expensive.first": "Expensive First",
+  "sort.rating": "Rating",
+  "sort.rating.first": "Best Rated First"
 }

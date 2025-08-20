@@ -2,16 +2,16 @@
 
 "[project]/apps/client/lib/i18n/locales/en/common.json (json)": ((__turbopack_context__) => {
 
-__turbopack_context__.v(JSON.parse("{\"hello\":\"Hello\",\"language\":\"Language\",\"logo.greeting\":\"It can’t be any more delicious\",\"theme.dark\":\"Dark\",\"theme.light\":\"Light\",\"theme.system\":\"System\",\"enter\":\"Enter\",\"profile\":\"Profile\"}"));}),
+__turbopack_context__.v(JSON.parse("{\"hello\":\"Hello\",\"language\":\"Language\",\"logo.greeting\":\"It can’t be any more delicious\",\"theme.dark\":\"Dark\",\"theme.light\":\"Light\",\"theme.system\":\"System\",\"enter\":\"Enter\",\"profile\":\"Profile\",\"title.all\":\"All Pizzas\",\"cats.pizzas\":\"Pizzas\",\"cats.combo\":\"Combo\",\"cats.snacks\":\"Snacks\",\"cats.cocktails\":\"Cocktails\",\"cats.coffee\":\"Coffee\",\"cats.drinks\":\"Drinks\",\"cats.desserts\":\"Desserts\"}"));}),
 "[project]/apps/client/lib/i18n/locales/lv/common.json (json)": ((__turbopack_context__) => {
 
-__turbopack_context__.v(JSON.parse("{\"hello\":\"Sveiki\",\"language\":\"Valoda\",\"logo.greeting\":\"Vairāk garšīgi nevar būt\",\"theme.dark\":\"Tumšais\",\"theme.light\":\"Gaišais\",\"theme.system\":\"Sistēma\",\"enter\":\"Ienākt\",\"profile\":\"Profils\"}"));}),
+__turbopack_context__.v(JSON.parse("{\"hello\":\"Sveiki\",\"language\":\"Valoda\",\"logo.greeting\":\"Vairāk garšīgi nevar būt\",\"theme.dark\":\"Tumšais\",\"theme.light\":\"Gaišais\",\"theme.system\":\"Sistēma\",\"enter\":\"Ienākt\",\"profile\":\"Profils\",\"title.all\":\"Visas Picas\",\"cats.pizzas\":\"Picas\",\"cats.combo\":\"Kombo\",\"cats.snacks\":\"Uzkodas\",\"cats.cocktails\":\"Kokteiļi\",\"cats.coffee\":\"Kafija\",\"cats.drinks\":\"Dzērieni\",\"cats.desserts\":\"Deserti\"}"));}),
 "[project]/apps/client/lib/i18n/locales/nl/common.json (json)": ((__turbopack_context__) => {
 
-__turbopack_context__.v(JSON.parse("{\"hello\":\"Hallo\",\"language\":\"Taal\",\"logo.greeting\":\"Lekkerder kan het niet worden\",\"theme.dark\":\"Donker\",\"theme.light\":\"Licht\",\"theme.system\":\"Systeem\",\"enter\":\"Inloggen\",\"profile\":\"Profiel\"}"));}),
+__turbopack_context__.v(JSON.parse("{\"hello\":\"Hallo\",\"language\":\"Taal\",\"logo.greeting\":\"Lekkerder kan het niet worden\",\"theme.dark\":\"Donker\",\"theme.light\":\"Licht\",\"theme.system\":\"Systeem\",\"enter\":\"Inloggen\",\"profile\":\"Profiel\",\"title.all\":\"Alle Pizza's\",\"cats.pizzas\":\"Pizza's\",\"cats.combo\":\"Combi\",\"cats.snacks\":\"Snacks\",\"cats.cocktails\":\"Cocktails\",\"cats.coffee\":\"Koffie\",\"cats.drinks\":\"Dranken\",\"cats.desserts\":\"Desserts\"}"));}),
 "[project]/apps/client/lib/i18n/locales/ru/common.json (json)": ((__turbopack_context__) => {
 
-__turbopack_context__.v(JSON.parse("{\"hello\":\"Привет\",\"language\":\"Язык\",\"logo.greeting\":\"Вкусней уже некуда\",\"theme.dark\":\"Тёмная\",\"theme.light\":\"Светлая\",\"theme.system\":\"Системная\",\"enter\":\"Войти\",\"profile\":\"Профиль\"}"));}),
+__turbopack_context__.v(JSON.parse("{\"hello\":\"Привет\",\"language\":\"Язык\",\"logo.greeting\":\"Вкусней уже некуда\",\"theme.dark\":\"Тёмная\",\"theme.light\":\"Светлая\",\"theme.system\":\"Системная\",\"enter\":\"Войти\",\"profile\":\"Профиль\",\"title.all\":\"Все Пиццы\",\"cats.pizzas\":\"Пиццы\",\"cats.combo\":\"Комбо\",\"cats.snacks\":\"Закуски\",\"cats.cocktails\":\"Коктейли\",\"cats.coffee\":\"Кофе\",\"cats.drinks\":\"Напитки\",\"cats.desserts\":\"Десерты\"}"));}),
 "[project]/apps/client/lib/i18n/init.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -986,7 +986,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRightIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle.js [app-client] (ecmascript) <export default as CircleIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/client/lib/utils.ts [app-client] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 ;
@@ -995,11 +995,11 @@ function Menubar(param) {
     let { className, ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
         "data-slot": "menubar",
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-background flex h-9 items-center gap-1 rounded-md border p-1 shadow-xs", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('bg-background flex h-9 items-center gap-1 rounded-md border p-1 shadow-xs', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 14,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -1011,7 +1011,7 @@ function MenubarMenu(param) {
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 28,
+        lineNumber: 23,
         columnNumber: 10
     }, this);
 }
@@ -1023,7 +1023,7 @@ function MenubarGroup(param) {
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 34,
+        lineNumber: 27,
         columnNumber: 10
     }, this);
 }
@@ -1035,7 +1035,7 @@ function MenubarPortal(param) {
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 40,
+        lineNumber: 31,
         columnNumber: 10
     }, this);
 }
@@ -1047,8 +1047,8 @@ function MenubarRadioGroup(param) {
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 47,
-        columnNumber: 5
+        lineNumber: 35,
+        columnNumber: 10
     }, this);
 }
 _c4 = MenubarRadioGroup;
@@ -1056,39 +1056,39 @@ function MenubarTrigger(param) {
     let { className, ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Trigger"], {
         "data-slot": "menubar-trigger",
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex items-center rounded-sm px-2 py-1 text-sm font-medium outline-hidden select-none", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex items-center rounded-sm px-2 py-1 text-sm font-medium outline-hidden select-none', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 56,
+        lineNumber: 43,
         columnNumber: 5
     }, this);
 }
 _c5 = MenubarTrigger;
 function MenubarContent(param) {
-    let { className, align = "start", alignOffset = -4, sideOffset = 8, ...props } = param;
+    let { className, align = 'start', alignOffset = -4, sideOffset = 8, ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenubarPortal, {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Content"], {
             "data-slot": "menubar-content",
             align: align,
             alignOffset: alignOffset,
             sideOffset: sideOffset,
-            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[12rem] origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-md", className),
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[12rem] origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-md', className),
             ...props
         }, void 0, false, {
             fileName: "[project]/apps/client/components/ui/menubar.tsx",
-            lineNumber: 76,
+            lineNumber: 63,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 75,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }
 _c6 = MenubarContent;
 function MenubarItem(param) {
-    let { className, inset, variant = "default", ...props } = param;
+    let { className, inset, variant = 'default', ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Item"], {
         "data-slot": "menubar-item",
         "data-inset": inset,
@@ -1097,7 +1097,7 @@ function MenubarItem(param) {
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 101,
+        lineNumber: 88,
         columnNumber: 5
     }, this);
 }
@@ -1117,24 +1117,24 @@ function MenubarCheckboxItem(param) {
                         className: "size-4"
                     }, void 0, false, {
                         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                        lineNumber: 132,
+                        lineNumber: 119,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                    lineNumber: 131,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                lineNumber: 130,
+                lineNumber: 117,
                 columnNumber: 7
             }, this),
             children
         ]
     }, void 0, true, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 121,
+        lineNumber: 108,
         columnNumber: 5
     }, this);
 }
@@ -1153,24 +1153,24 @@ function MenubarRadioItem(param) {
                         className: "size-2 fill-current"
                     }, void 0, false, {
                         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                        lineNumber: 156,
+                        lineNumber: 143,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                    lineNumber: 155,
+                    lineNumber: 142,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                lineNumber: 154,
+                lineNumber: 141,
                 columnNumber: 7
             }, this),
             children
         ]
     }, void 0, true, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 146,
+        lineNumber: 133,
         columnNumber: 5
     }, this);
 }
@@ -1180,11 +1180,11 @@ function MenubarLabel(param) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
         "data-slot": "menubar-label",
         "data-inset": inset,
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("px-2 py-1.5 text-sm font-medium data-[inset]:pl-8", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('px-2 py-1.5 text-sm font-medium data-[inset]:pl-8', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 172,
+        lineNumber: 159,
         columnNumber: 5
     }, this);
 }
@@ -1193,11 +1193,11 @@ function MenubarSeparator(param) {
     let { className, ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Separator"], {
         "data-slot": "menubar-separator",
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-border -mx-1 my-1 h-px", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('bg-border -mx-1 my-1 h-px', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 189,
+        lineNumber: 173,
         columnNumber: 5
     }, this);
 }
@@ -1206,11 +1206,11 @@ function MenubarShortcut(param) {
     let { className, ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
         "data-slot": "menubar-shortcut",
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground ml-auto text-xs tracking-widest", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('text-muted-foreground ml-auto text-xs tracking-widest', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 202,
+        lineNumber: 183,
         columnNumber: 5
     }, this);
 }
@@ -1222,7 +1222,7 @@ function MenubarSub(param) {
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 216,
+        lineNumber: 192,
         columnNumber: 10
     }, this);
 }
@@ -1232,7 +1232,7 @@ function MenubarSubTrigger(param) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SubTrigger"], {
         "data-slot": "menubar-sub-trigger",
         "data-inset": inset,
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-none select-none data-[inset]:pl-8", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-none select-none data-[inset]:pl-8', className),
         ...props,
         children: [
             children,
@@ -1240,13 +1240,13 @@ function MenubarSubTrigger(param) {
                 className: "ml-auto h-4 w-4"
             }, void 0, false, {
                 fileName: "[project]/apps/client/components/ui/menubar.tsx",
-                lineNumber: 238,
+                lineNumber: 214,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 228,
+        lineNumber: 204,
         columnNumber: 5
     }, this);
 }
@@ -1255,11 +1255,11 @@ function MenubarSubContent(param) {
     let { className, ...props } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$menubar$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SubContent"], {
         "data-slot": "menubar-sub-content",
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-lg", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$client$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-lg', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/apps/client/components/ui/menubar.tsx",
-        lineNumber: 248,
+        lineNumber: 224,
         columnNumber: 5
     }, this);
 }

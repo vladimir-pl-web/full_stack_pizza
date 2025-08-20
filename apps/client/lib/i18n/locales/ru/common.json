@@ -6,5 +6,24 @@
   "theme.light": "Светлая",
   "theme.system": "Системная",
   "enter": "Войти",
-  "profile": "Профиль"
+  "profile": "Профиль",
+  "title.all": "Все Пиццы",
+
+  "cats.pizzas": "Пиццы",
+  "cats.combo": "Комбо",
+  "cats.snacks": "Закуски",
+  "cats.cocktails": "Коктейли",
+  "cats.coffee": "Кофе",
+  "cats.drinks": "Напитки",
+  "cats.desserts": "Десерты",
+
+  "sort": "Сортировать",
+  "sort.popular": "Популярное",
+  "sort.popular.first": "Сначала популярное",
+  "sort.cheap": "Недорогие",
+  "sort.cheap.first": "Сначала недорогие",
+  "sort.expensive": "Дорогие",
+  "sort.expensive.first": "Сначала дорогие",
+  "sort.rating": "Оценка",
+  "sort.rating.first": "С лучшей оценкой"
 }

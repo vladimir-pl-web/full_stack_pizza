@@ -6,5 +6,24 @@
   "theme.light": "Gaišais",
   "theme.system": "Sistēma",
   "enter": "Ienākt",
-  "profile": "Profils"
+  "profile": "Profils",
+
+  "title.all": "Visas Picas",
+  "cats.pizzas": "Picas",
+  "cats.combo": "Kombo",
+  "cats.snacks": "Uzkodas",
+  "cats.cocktails": "Kokteiļi",
+  "cats.coffee": "Kafija",
+  "cats.drinks": "Dzērieni",
+  "cats.desserts": "Deserti",
+
+  "sort": "Kārtot",
+  "sort.popular": "Populārs",
+  "sort.popular.first": "Vispirms populārs",
+  "sort.cheap": "Lēti",
+  "sort.cheap.first": "Vispirms lēti",
+  "sort.expensive": "Dārgi",
+  "sort.expensive.first": "Vispirms dārgi",
+  "sort.rating": "Vērtējums",
+  "sort.rating.first": "Visaugstāk vērtētie"
 }
