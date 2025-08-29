@@ -7,6 +7,7 @@ import { DropdownMenu } from './dropdown-menu'
 import { Input } from './input'
 import { Menubar } from './menubar'
 import { Popover } from './popover'
+import { RangeSlider } from './rangeSlider'
 import { Select } from './select'
 import { Skeleton } from './skeleton'
 import { Slider } from './slider'
@@ -22,6 +23,7 @@ export {
   Input,
   Menubar,
   Popover,
+  RangeSlider,
   Select,
   Skeleton,
   Slider,

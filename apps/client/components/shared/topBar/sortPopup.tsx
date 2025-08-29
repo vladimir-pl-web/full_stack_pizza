@@ -26,12 +26,14 @@ export const SortPopup: FC<ISortPopup> = ({ className }) => {
       <PopoverTrigger asChild>
         <div
           className={cn(
-            'inline-flex h-[52px] w-[265px] cursor-pointer items-center gap-1 rounded-2xl bg-gray-50 px-5',
+            'inline-flex h-[52px] w-[265px] cursor-pointer items-center justify-around gap-1 rounded-2xl bg-gray-50 px-5 dark:bg-neutral-200 dark:text-gray-400',
             className
           )}
         >
-          <ArrowUpDown className="h-4 w-4" />
-          <b>{t('sort')}:</b>
+          <span className="flex items-center gap-1">
+            <ArrowUpDown className="h-4 w-4" />
+            <b>{t('sort')}:</b>
+          </span>
 
           <b className="text-primary">{sort}</b>
         </div>

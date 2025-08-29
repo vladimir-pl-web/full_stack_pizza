@@ -49,6 +49,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "dayjs": "^1.11.10",
     "lodash": "^4.17.21",
+    "react-use": "^17.6.0",
     "zod": "^4.0.17"
   }
 }

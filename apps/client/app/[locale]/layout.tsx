@@ -34,7 +34,6 @@ export default async function RootLayout(props: {
         <ThemeProvider>
           <I18nProvider locale={locale}>
             <main className="min-h-screen">
-              <h1>{t('language')}</h1>
               <Header isAuthorised={false} locale={locale} translate={t} />
               {children}
             </main>
