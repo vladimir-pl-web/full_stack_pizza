@@ -78,3 +78,16 @@ export const items: IFilterCheckbox[] = [
     value: '18'
   }
 ]
+
+export const pizzaItems = [
+  { id: 1, name: 'Маргарита' },
+  { id: 2, name: 'Пепперони' },
+  { id: 3, name: 'Четыре сезона' },
+  { id: 4, name: 'Четыре сыра' },
+  { id: 5, name: 'Гавайская' },
+  { id: 6, name: 'Мясная' },
+  { id: 7, name: 'Вегетарианская' },
+  { id: 8, name: 'Барбекю' },
+  { id: 9, name: 'Охотничья' },
+  { id: 10, name: 'Сырная' }
+]

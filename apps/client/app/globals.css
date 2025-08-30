@@ -119,7 +119,14 @@
   border-radius: 6px;
   background: #fff;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 .scrollbar::-webkit-scrollbar-thumb {
   background: #dbdadd;
   border-radius: 6px;

@@ -1,6 +1,7 @@
 import { Badge } from './badge'
 import { Button } from './button'
 import { Checkbox } from './checkbox'
+import { CountButton } from './countButton'
 import { Dialog } from './dialog'
 import { Drawer } from './drawer'
 import { DropdownMenu } from './dropdown-menu'
@@ -17,6 +18,7 @@ export {
   Badge,
   Button,
   Checkbox,
+  CountButton,
   Dialog,
   Drawer,
   DropdownMenu,
