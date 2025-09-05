@@ -13,7 +13,11 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "push": " prisma db push",
+    "migrate": " prisma migrate dev",
+    "studio": " prisma studio",
+    "seed": "ts-node -P tsconfig.json prisma/seeder/seed/seed.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
@@ -36,8 +40,13 @@
     "@types/jest": "^30.0.0",
     "@types/supertest": "^6.0.2",
     "jest": "^30.0.0",
+    "run": "^1.5.0",
+    "seed": "^0.4.4",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.5",
-    "tsconfig-paths": "^4.2.0"
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.2",
+    "typescriptnpm": "^1.0.1"
   }
 }
