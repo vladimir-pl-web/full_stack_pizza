@@ -19,7 +19,22 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 /** @type {import('eslint').Linter.FlatConfigArray} */
 export default [
   {
-    ignores: ['**/dist/**', 'node_modules', '**/.next/**', 'build', 'client/public']
+    ignores: [
+      '**/dist/**',
+      'node_modules',
+      '**/.next/**',
+      'build',
+      'client/public',
+
+      // Добавляем, чтобы ESLint НЕ ТРОГАЛ конфиги Next/Tailwind
+      'next.config.js',
+      'next.config.mjs',
+      'tailwind.config.js',
+      'postcss.config.js',
+      '*.config.js',
+      '*.config.cjs',
+      '*.config.mjs'
+    ]
   },
 
   // Base JS + TS recommended configs
