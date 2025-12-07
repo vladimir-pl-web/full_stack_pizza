@@ -1,14 +1,16 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
 echo "🔍 Проверка ESLint и Prettier staged файлов…"
 
-# Получаем все staged файлы
-STAGED_TS=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.(ts|tsx|js|jsx)$")
-STAGED_OTHER=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.(json|md|css|scss)$")
+# Получаем все staged TS/JS файлы
+STAGED_TS=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.(ts|tsx|js|jsx)$" || true)
 
-# Проверка ESLint
+# Получаем все staged другие файлы для Prettier
+STAGED_OTHER=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.(json|md|css|scss)$" || true)
+
+# ESLint проверка
 if [ -n "$STAGED_TS" ]; then
+  echo "🔹 ESLint для staged TS/JS файлов"
   npx eslint $STAGED_TS
   if [ $? -ne 0 ]; then
     echo "❌ ESLint failed. Commit aborted."
@@ -16,8 +18,9 @@ if [ -n "$STAGED_TS" ]; then
   fi
 fi
 
-# Проверка Prettier
+# Prettier проверка
 if [ -n "$STAGED_TS$STAGED_OTHER" ]; then
+  echo "🔹 Prettier для staged файлов"
   npx prettier --check $STAGED_TS $STAGED_OTHER
   if [ $? -ne 0 ]; then
     echo "❌ Prettier check failed. Commit aborted."
@@ -25,5 +28,4 @@ if [ -n "$STAGED_TS$STAGED_OTHER" ]; then
   fi
 fi
 
-echo "✅ Lint и Prettier пройдены. Commit allowed."
-
+echo "✅ Все проверки пройдены. Commit allowed."
