@@ -1,14 +1,14 @@
 import { Container, Filters, ProductGroupList, Title, TopBar } from '~/components/shared'
 import { pizzaItems } from '~/components/shared/filters/dummy'
-import { Locale } from '~/lib/i18n/config'
+import { getDefaultLocale, isLocale } from '~/lib/i18n'
 import { getServerTranslation } from '~/lib/i18n/server'
+import { Locale } from '~/lib/i18n/types'
 
-export default async function Home(props: { params: Promise<{ locale: Locale }> }) {
-  const { params } = props
-  const resolvedParams = await params
-  const locale = resolvedParams.locale
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const safeLocale: Locale = isLocale(locale) ? (locale as Locale) : getDefaultLocale()
 
-  const t = await getServerTranslation(locale)
+  const t = await getServerTranslation(safeLocale)
 
   return (
     <div className="mt-2 flex flex-col items-center justify-center gap-2">
