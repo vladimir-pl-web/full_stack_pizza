@@ -9,7 +9,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const safeLocale: Locale = isLocale(locale) ? (locale as Locale) : getDefaultLocale()
 
   const t = await getServerTranslation(safeLocale)
-
   return (
     <div className="mt-2 flex flex-col items-center justify-center gap-2">
       <Container className="mt-5">

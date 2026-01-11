@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 
 import { I18nProvider } from '~/components/providers/i18nProvider'
+import { LocaleProvider } from '~/components/providers/localeProvider'
+import { QueryProvider } from '~/components/providers/queryProvider'
 import { ThemeProvider } from '~/components/providers/themeProvider'
 import { Header } from '~/components/shared'
 import { getDefaultLocale, isLocale } from '~/lib/i18n'
@@ -35,12 +37,16 @@ export default async function RootLayout({
     <html lang={safeLocale}>
       <body className={`${nunito.variable} } antialiased`}>
         <ThemeProvider>
-          <I18nProvider locale={safeLocale}>
-            <main className="min-h-screen">
-              <Header isAuthorised={false} locale={safeLocale} translate={t} />
-              {children}
-            </main>
-          </I18nProvider>
+          <QueryProvider>
+            <LocaleProvider initialLocale={safeLocale}>
+              <I18nProvider locale={safeLocale}>
+                <main className="min-h-screen">
+                  <Header isAuthorised={false} locale={safeLocale} translate={t} />
+                  {children}
+                </main>
+              </I18nProvider>
+            </LocaleProvider>
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>
