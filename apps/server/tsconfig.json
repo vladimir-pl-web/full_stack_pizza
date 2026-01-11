@@ -2,17 +2,17 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "experimentalDecorators": true,
-    "noEmit": true,
-    //"allowImportingTsExtensions": true,
+    "noEmit": false,
+    "types": ["node", "jest"],
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
-    "paths": {
-      "@items/*": ["prisma/seeder/seed/items/*"]
-    },
     "incremental": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "rootDir": ".",
+    "paths": { "prisma/*": ["prisma/*"] }
   },
 
-  "include": ["src/**/*.ts", "prisma/seeder/seed/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts", "prisma/**/*.ts"],
+  "exclude": ["node_modules", "dist", "prisma/seeder"],
+  "references": [{ "path": "../../packages/types" }]
 }

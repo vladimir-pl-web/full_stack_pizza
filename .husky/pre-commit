@@ -1,31 +1,55 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-echo "🔍 Проверка ESLint и Prettier staged файлов…"
+echo ""
+echo "🔍 Pre-commit checks (staged files only)"
+echo "--------------------------------------"
 
-# Получаем все staged TS/JS файлы
-STAGED_TS=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.(ts|tsx|js|jsx)$" || true)
+# Получаем staged файлы
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM)
 
-# Получаем все staged другие файлы для Prettier
-STAGED_OTHER=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.(json|md|css|scss)$" || true)
+# TS/JS файлы для ESLint (без dist/.next/build)
+STAGED_TS=$(echo "$STAGED_FILES" \
+  | grep -E "\.(ts|tsx|js|jsx)$" \
+  | grep -vE "(^|/)(dist|\.next|build|coverage|node_modules)/" || true)
 
-# ESLint проверка
+# Файлы для Prettier
+STAGED_PRETTIER=$(echo "$STAGED_FILES" \
+  | grep -E "\.(json|md|css|scss|yml|yaml)$" || true)
+
+# ESLint
 if [ -n "$STAGED_TS" ]; then
-  echo "🔹 ESLint для staged TS/JS файлов"
-  npx eslint $STAGED_TS
+  echo ""
+  echo "🔹 ESLint:"
+  echo "$STAGED_TS"
+  echo ""
+
+  echo "$STAGED_TS" | xargs npx eslint --fix --no-warn-ignored
   if [ $? -ne 0 ]; then
+    echo ""
     echo "❌ ESLint failed. Commit aborted."
     exit 1
   fi
+else
+  echo "ℹ️  No staged TS/JS files for ESLint"
 fi
 
-# Prettier проверка
-if [ -n "$STAGED_TS$STAGED_OTHER" ]; then
-  echo "🔹 Prettier для staged файлов"
-  npx prettier --check $STAGED_TS $STAGED_OTHER
+# Prettier
+if [ -n "$STAGED_PRETTIER" ]; then
+  echo ""
+  echo "🔹 Prettier:"
+  echo "$STAGED_PRETTIER"
+  echo ""
+
+  echo "$STAGED_PRETTIER" | xargs npx prettier --check
   if [ $? -ne 0 ]; then
+    echo ""
     echo "❌ Prettier check failed. Commit aborted."
     exit 1
   fi
+else
+  echo "ℹ️  No staged files for Prettier"
 fi
 
-echo "✅ Все проверки пройдены. Commit allowed."
+echo ""
+echo "✅ All checks passed. Commit allowed."
+echo ""

@@ -11,8 +11,7 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
 import path from 'path'
 import tseslint from 'typescript-eslint'
-import { URL } from 'url'
-import { fileURLToPath } from 'url'
+import { fileURLToPath, URL } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -20,9 +19,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default [
   {
     ignores: [
-      '**/dist/**',
-      'node_modules',
-      '**/.next/**',
+    '**/dist/**',
+    '**/.next/**',
+    '**/build/**',
+    '**/coverage/**',
+    '**/node_modules/**',
+    '**/out/**',
       'build',
       'client/public',
 

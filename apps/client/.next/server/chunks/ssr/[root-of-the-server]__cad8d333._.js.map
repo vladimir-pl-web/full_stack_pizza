@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/vladi/Desktop/nest/pizza_fullstack/apps/client/app/page.tsx"],"sourcesContent":["export default async function Home() {\n  const data = await fetch('http://localhost:4200/api')\n\n  const post = await data.json()\n  return <div>{JSON.stringify(post)}</div>\n  return (\n    <div className=\"grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-sans sm:p-20\">\n      <main className=\"row-start-2 flex flex-col items-center gap-[32px] sm:items-start\"></main>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;AAAe,eAAe;IAC5B,MAAM,OAAO,MAAM,MAAM;IAEzB,MAAM,OAAO,MAAM,KAAK,IAAI;IAC5B,qBAAO,8OAAC;kBAAK,KAAK,SAAS,CAAC;;;;;;;;AAM9B","debugId":null}}]
-}

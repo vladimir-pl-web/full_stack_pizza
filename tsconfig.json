@@ -1,11 +1,8 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "incremental": true,
-    "outDir": "./dist"
-  },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
-  "exclude": ["node_modules", "dist"]
+  "files": [],
+  "references": [
+    { "path": "./apps/server" },
+    { "path": "./apps/client" },
+    { "path": "./packages/types" }
+  ]
 }
