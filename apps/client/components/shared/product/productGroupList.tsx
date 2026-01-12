@@ -2,7 +2,7 @@
 import React, { FC, RefObject, useEffect, useRef } from 'react'
 import { useIntersection } from 'react-use'
 
-import { useCategoryStore } from '~/store'
+import { useCategoryStore } from '~/app/stores'
 
 import { ProductCard, Title } from '..'
 
@@ -28,7 +28,7 @@ export const ProductGroupList: FC<IProductGroupList> = ({
 
   useEffect(() => {
     if (intersection?.isIntersecting) {
-      setActiveCategory(categoryId)
+      setActiveCategory(+categoryId)
     }
   }, [intersection, categoryId])
 

@@ -14,7 +14,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Container className="mt-5">
         <Title text={t('title.all')} size="lg" className="text-left font-extrabold" />
       </Container>
-      <TopBar />
+      <TopBar locale={safeLocale} />
       <Container className="flex flex-row gap-20">
         <Filters />
         <div className="flex-1">

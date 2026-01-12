@@ -3,7 +3,7 @@
 import { Locale } from '@workspace/types'
 import { ReactNode, useEffect } from 'react'
 
-import { initializeLocale } from '~/app/stores/localStore'
+import { initializeLocale } from '~/app/stores'
 
 export const LocaleProvider = ({
   children,

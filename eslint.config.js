@@ -19,12 +19,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default [
   {
     ignores: [
-    '**/dist/**',
-    '**/.next/**',
-    '**/build/**',
-    '**/coverage/**',
-    '**/node_modules/**',
-    '**/out/**',
+      '**/dist/**',
+      '**/.next/**',
+      '**/build/**',
+      '**/coverage/**',
+      '**/node_modules/**',
+      '**/out/**',
       'build',
       'client/public',
 

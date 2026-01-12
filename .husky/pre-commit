@@ -1,5 +1,15 @@
 #!/usr/bin/env sh
 
+# TypeScript type check
+echo ""
+echo "🔹 TypeScript type-check:"
+npx tsc --noEmit
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ TypeScript failed. Commit aborted."
+  exit 1
+fi
+
 echo ""
 echo "🔍 Pre-commit checks (staged files only)"
 echo "--------------------------------------"

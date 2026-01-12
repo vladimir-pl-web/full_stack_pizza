@@ -9,7 +9,10 @@ async function bootstrap() {
     const PORT = process.env.PORT ?? 4200;
     prismaService.enableShutdownHooks(app);
     app.setGlobalPrefix('api');
-    app.enableCors();
+    app.enableCors({
+        origin: 'http://localhost:3000',
+        credentials: true
+    });
     await app.listen(PORT);
 }
 bootstrap();
