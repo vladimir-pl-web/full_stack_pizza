@@ -24,7 +24,8 @@ STAGED_TS=$(echo "$STAGED_FILES" \
 
 # Файлы для Prettier
 STAGED_PRETTIER=$(echo "$STAGED_FILES" \
-  | grep -E "\.(json|md|css|scss|yml|yaml)$" || true)
+  | grep -E "\.(json|md|css|scss|yml|yaml)$" \
+  | grep -vE "(^|/)(node_modules|dist|\.next|build|coverage)/" || true)
 
 # ESLint
 if [ -n "$STAGED_TS" ]; then
@@ -50,7 +51,7 @@ if [ -n "$STAGED_PRETTIER" ]; then
   echo "$STAGED_PRETTIER"
   echo ""
 
-  echo "$STAGED_PRETTIER" | xargs npx prettier --check
+  echo "$STAGED_PRETTIER" | xargs -r npx prettier --check
   if [ $? -ne 0 ]; then
     echo ""
     echo "❌ Prettier check failed. Commit aborted."
