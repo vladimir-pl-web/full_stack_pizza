@@ -1,5 +1,4 @@
-# Node modules
-/node_modules
+
 
 # Logs
 logs
@@ -11,9 +10,11 @@ pnpm-debug.log*
 # Build output
 dist
 **/dist/**
-build
 .next
+build
 out
+node_modules
+**/node_modules/**
 
 # Env files
 .env
