@@ -1,3 +1,4 @@
+import { IngredientDto } from '@workspace/types'
 import { Plus } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,9 +15,19 @@ interface IProductCard {
   price: number
   count?: number
   imageUrl: string
+  ingredients: IngredientDto[]
 }
 
-export const ProductCard: FC<IProductCard> = ({ className, id, imageUrl, name, price, count }) => {
+export const ProductCard: FC<IProductCard> = ({
+  className,
+  id,
+  ingredients,
+  imageUrl,
+  name,
+  price,
+  count
+}) => {
+  const ingredientsString = ingredients.map((ingredient) => ingredient.name).join(', ')
   return (
     <div className={className}>
       <Link href={`/product/${id}`}>
@@ -24,9 +35,7 @@ export const ProductCard: FC<IProductCard> = ({ className, id, imageUrl, name, p
           <Image height={215} width={215} src={imageUrl} alt={name} />
         </div>
         <Title text={name} size="sm" className="mt-3 mb-1 font-bold" />
-        <p className="text-sm text-gray-400">
-          Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок
-        </p>
+        <p className="text-sm text-gray-400">{ingredientsString}</p>
 
         <div className="mt-4 flex items-center justify-between">
           <span className="text-[20px]">

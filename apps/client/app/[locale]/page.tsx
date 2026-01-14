@@ -1,5 +1,5 @@
-import { Container, Filters, ProductGroupList, Title, TopBar } from '~/components/shared'
-import { pizzaItems } from '~/components/shared/filters/dummy'
+import { Container, Filters, Title, TopBar } from '~/components/shared'
+import { ProductList } from '~/components/shared/productList'
 import { getDefaultLocale, isLocale } from '~/lib/i18n'
 import { getServerTranslation } from '~/lib/i18n/server'
 import { Locale } from '~/lib/i18n/types'
@@ -17,16 +17,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <TopBar locale={safeLocale} />
       <Container className="flex flex-row gap-20">
         <Filters />
-        <div className="flex-1">
-          <div className="flex flex-col gap-16">
-            <ProductGroupList categoryId="1" title="Пиццы" items={pizzaItems} />
-            <ProductGroupList categoryId="2" title="Комбо" items={pizzaItems} />
-            <ProductGroupList categoryId="3" title="Пиццы" items={pizzaItems} />
-            <ProductGroupList categoryId="4" title="Комбо" items={pizzaItems} />
-            <ProductGroupList categoryId="5" title="Пиццы" items={pizzaItems} />
-            <ProductGroupList categoryId="6" title="Комбо" items={pizzaItems} />
-          </div>
-        </div>
+        <ProductList locale={safeLocale} />
       </Container>
     </div>
   )

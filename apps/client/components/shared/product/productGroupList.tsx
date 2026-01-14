@@ -1,4 +1,5 @@
 'use client'
+import { ProductDto } from '@workspace/types'
 import React, { FC, RefObject, useEffect, useRef } from 'react'
 import { useIntersection } from 'react-use'
 
@@ -9,9 +10,8 @@ import { ProductCard, Title } from '..'
 interface IProductGroupList {
   className?: string
   title: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  items: any[]
-  categoryId: string
+  items: ProductDto[]
+  categoryId: number
 }
 
 export const ProductGroupList: FC<IProductGroupList> = ({
@@ -34,16 +34,17 @@ export const ProductGroupList: FC<IProductGroupList> = ({
 
   return (
     <>
-      <div className="h-0" id={categoryId}></div>
+      <div className="h-0" id={categoryId.toString()}></div>
       <div className={className} ref={categoryRef}>
         <Title text={title} size="lg" className="mb-5 font-extrabold" />
         <div className="grid grid-cols-3 gap-[50px]">
           {items.map((item, i) => (
             <ProductCard
               key={item.id}
-              name="Маргарита"
-              imageUrl="https://media.dodostatic.net/image/r:292x292/11EE7D610BBEB562BD4D48786AD87270.webp"
-              price={390}
+              name={item.name}
+              imageUrl={item.imageUrl}
+              price={item.price}
+              ingredients={item.ingredients}
               count={i % 2}
               id={item.id}
             />

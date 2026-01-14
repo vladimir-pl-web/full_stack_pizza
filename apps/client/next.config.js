@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'media.dodostatic.net',
+        hostname: 'source.unsplash.com',
         port: '',
         pathname: '/**' // Полное разрешение любых путей
       }

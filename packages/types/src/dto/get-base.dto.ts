@@ -16,6 +16,7 @@ export interface ProductDto {
   imageUrl: string
   price: number
   categoryId: number
+  categoryName: string
   ingredients: IngredientDto[]
 }
 export interface CatalogBaseResponse {

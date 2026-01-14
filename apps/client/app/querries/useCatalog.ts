@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { Locale } from '@workspace/types'
 
 import { Catalog } from '../api'
+import { splitProductsByCategories } from '../utils/splitProductsByCategories'
 
 const { getCatalogData } = Catalog
 
@@ -19,5 +20,6 @@ export const useCatalog = (locale: Locale) => {
   const categories = data?.categories || []
   const products = data?.products || []
   const ingredients = data?.ingredients || []
-  return { categories, products, ingredients, isLoading, error }
+  const productsByCategories = splitProductsByCategories(products)
+  return { categories, productsByCategories, ingredients, isLoading, error }
 }
