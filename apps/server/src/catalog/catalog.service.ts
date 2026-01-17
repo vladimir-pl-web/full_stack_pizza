@@ -54,6 +54,7 @@ export class CatalogService {
               }
             }
           },
+          orderBy: { id: 'asc' },
           take: 12
         })
       ])
@@ -86,13 +87,16 @@ export class CatalogService {
         price: p.items[0]?.price ?? 0
       }))
 
+      const lastProduct = productsRow.at(-1)
+      const nextCursor = lastProduct?.id ?? null
       return {
         locale,
         data: {
           categories,
           ingredients,
           products
-        }
+        },
+        nextCursor
       } as unknown as CatalogBaseResponse
     } catch (error) {
       console.error('Error fetching catalog base:', error)

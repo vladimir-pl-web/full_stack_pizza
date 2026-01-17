@@ -40,7 +40,7 @@ export const ProductGroupList: FC<IProductGroupList> = ({
         <div className="grid grid-cols-3 gap-[50px]">
           {items.map((item, i) => (
             <ProductCard
-              key={item.id}
+              key={item.name + i}
               name={item.name}
               imageUrl={item.imageUrl}
               price={item.price}

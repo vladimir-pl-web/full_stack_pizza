@@ -5,9 +5,10 @@ import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { CatalogModule } from './catalog/catalog.module'
 import { LocaleMiddleware } from './middleware/locale.middleware'
+import { ProductModule } from './product/product.module'
 
 @Module({
-  imports: [PrismaModule, CatalogModule],
+  imports: [PrismaModule, CatalogModule, ProductModule],
   controllers: [AppController],
   providers: [AppService]
 })

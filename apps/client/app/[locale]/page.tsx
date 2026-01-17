@@ -1,5 +1,4 @@
-import { Container, Filters, Title, TopBar } from '~/components/shared'
-import { ProductList } from '~/components/shared/productList'
+import { Container, Filters, ProductList, Title, TopBar } from '~/components/shared'
 import { getDefaultLocale, isLocale } from '~/lib/i18n'
 import { getServerTranslation } from '~/lib/i18n/server'
 import { Locale } from '~/lib/i18n/types'

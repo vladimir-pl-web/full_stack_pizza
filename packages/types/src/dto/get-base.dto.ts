@@ -26,4 +26,5 @@ export interface CatalogBaseResponse {
     ingredients: IngredientDto[]
     products: ProductDto[]
   }
+  nextCursor?: number
 }

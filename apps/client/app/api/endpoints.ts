@@ -1,7 +1,7 @@
 export enum Endpoints {
   AUTH = '/auth',
   USERS = '/users',
-  PIZZAS = '/pizzas',
+  PRODUCTS = '/products',
   INGREDIENTS = '/ingredients',
   ORDERS = '/orders',
   CATALOG = '/catalog'

@@ -1,3 +1,2 @@
-import Catalog from './catalog'
-
-export { Catalog }
+export { default as Catalog } from './catalog'
+export { default as Products } from './products'

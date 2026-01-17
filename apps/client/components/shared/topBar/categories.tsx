@@ -3,7 +3,7 @@ import { Locale } from '@workspace/types'
 import Link from 'next/link'
 import React, { useMemo } from 'react'
 
-import { useCatalog } from '~/app/querries/useCatalog'
+import { useCatalogInfinite } from '~/app/queries'
 import { useCategoryStore } from '~/app/stores'
 import { CategoriesSkeleton } from '~/components/ui/skeletons/categoriesSceleton'
 import { cn } from '~/lib/utils'
@@ -14,8 +14,8 @@ interface ICategories {
 }
 
 export const Categories: React.FC<ICategories> = ({ className, locale }) => {
-  const { categories, isLoading } = useCatalog(locale)
-
+  const { data, isLoading } = useCatalogInfinite(locale)
+  const categories = data?.categories ?? []
   const activeIndex = useCategoryStore((state) => state.activeCategory)
   const setActiveCategory = useCategoryStore((state) => state.setActiveCategory)
   const onActiveCategorySet = (id: number) => {
